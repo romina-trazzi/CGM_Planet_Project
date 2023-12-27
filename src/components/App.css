@@ -3,3 +3,18 @@
   margin: 0px;
   padding: 0px;
 }
+
+header,
+footer {
+  height: 100px;
+  background-color: black;
+  color: white;
+}
+
+main {
+  background-image: image-set('../assets/images/6484481.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(100vh - 100px - 100px);
+}
+
