@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { planetsData } from '../assets/planets.js';
 import './App.css';
+import PlanetData from '../components/PlanetData/PlanetData.jsx';
+import PlanetList from '../components/PlanetList/PlanetList.jsx';
 
 function App() {
   const [planet, setPlanet] = useState('Please select a planet');
@@ -12,12 +14,12 @@ function App() {
       </header>
 
       <main>
-        <div className='planet_list'></div>
-        <div className='planet_data'></div>
+        <PlanetList />
+        <PlanetData />
       </main>
 
       <footer>
-        <span> Created with love by ~ Romina Trazzi 2023 ~ </span>
+        <span> Made with love by ~ Romina Trazzi 2023 ~ </span>
       </footer>
     </>
   );
