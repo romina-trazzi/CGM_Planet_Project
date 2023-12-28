@@ -1,0 +1,5 @@
+.planet_data {
+  grid-area: planetdata;
+  height: 10rem;
+  background-color: rgba(244, 0, 0, 0.948);
+}
