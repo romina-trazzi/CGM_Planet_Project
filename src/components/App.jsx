@@ -5,7 +5,13 @@ import PlanetData from '../components/PlanetData/PlanetData.jsx';
 import PlanetList from '../components/PlanetList/PlanetList.jsx';
 
 function App() {
-  const [planet, setPlanet] = useState('Please select a planet');
+  const [selectedPlanet, setSelectedPlanet] = useState({});
+
+  // Handler Function
+  function handleClick(planetName) {
+    const prova = planetsData.filter((planet) => planet.name === planetName);
+    setSelectedPlanet(prova);
+  }
 
   return (
     <>
@@ -14,8 +20,8 @@ function App() {
       </header>
 
       <main>
-        <PlanetList />
-        <PlanetData />
+        <PlanetList onSelect={handleClick} />
+        <PlanetData selectedPlanet={selectedPlanet} />
       </main>
 
       <footer>
@@ -26,4 +32,8 @@ function App() {
 }
 
 export default App;
+
+// Componente + Props + funzione anonima + callback Handler(parametro)
+
+//
 
