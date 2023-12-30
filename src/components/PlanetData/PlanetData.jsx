@@ -1,4 +1,4 @@
-import "./PlanetData.css";
+import './PlanetData.css';
 
 function PlanetData({ selectedPlanet }) {
   const {
@@ -11,25 +11,24 @@ function PlanetData({ selectedPlanet }) {
     gravity,
   } = selectedPlanet;
   return (
-    <div className="planet_data">
-      <div className="title">PLANET DATA</div>
+    <div className='planet_data'>
+      <div className='title'>~ PLANET DATA ~</div>
       {name ? (
         <div>
-          <p>{name}</p> 
+          <p>{name}</p>
           {image}
-          <p>{title}</p> 
-          <p>{description}</p> 
+          <p>{title}</p>
+          <p>{description}</p>
           <p>{distanceFromSun}</p>
           <p>{diameter}</p>
           <p>{gravity}</p>
         </div>
       ) : (
-        "Please select a planet"
+        'Please select a planet'
       )}
     </div>
   );
 }
 
 export default PlanetData;
-
 

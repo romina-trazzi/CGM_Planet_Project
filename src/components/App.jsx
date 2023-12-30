@@ -1,8 +1,9 @@
-import { useState } from "react";
-import { planetsData } from "../assets/planets.js";
-import "./App.css";
-import PlanetData from "../components/PlanetData/PlanetData.jsx";
-import PlanetList from "../components/PlanetList/PlanetList.jsx";
+import { useState } from 'react';
+import { planetsData } from '../assets/planets.js';
+import './App.css';
+import PlanetData from '../components/PlanetData/PlanetData.jsx';
+import PlanetList from '../components/PlanetList/PlanetList.jsx';
+import PlanetButton from '../components/PlanetButton/PlanetButton.jsx';
 
 function App() {
   const [selectedPlanet, setSelectedPlanet] = useState({});
@@ -15,6 +16,12 @@ function App() {
     }
   }
 
+  function handleReset() {
+    if (selectedPlanet !== undefined) {
+      setSelectedPlanet({});
+    }
+  }
+
   return (
     <>
       <header>
@@ -23,6 +30,7 @@ function App() {
 
       <main>
         <PlanetList onSelect={handleClick} />
+        <PlanetButton onReset={handleReset} />
         <PlanetData selectedPlanet={selectedPlanet} />
       </main>
 
@@ -36,5 +44,4 @@ function App() {
 export default App;
 
 // Componente + Props che gestisce la funzione Handler + funzione Handler(parametro)
-
 
