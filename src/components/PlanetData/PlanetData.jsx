@@ -14,9 +14,9 @@ function PlanetData({ selectedPlanet }) {
     <div className='planet_data'>
       <div className='title'>~ PLANET DATA ~</div>
       {name ? (
-        <div>
+        <div class='planet_info'>
           <p>{name}</p>
-          {image}
+          <img src={image} />
           <p>{title}</p>
           <p>{description}</p>
           <p>{distanceFromSun}</p>
@@ -24,7 +24,7 @@ function PlanetData({ selectedPlanet }) {
           <p>{gravity}</p>
         </div>
       ) : (
-        'Please select a planet'
+        <p class='noplanet'>...PLEASE SELECT A PLANET...</p>
       )}
     </div>
   );
