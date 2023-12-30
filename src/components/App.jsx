@@ -1,16 +1,18 @@
-import { useState } from 'react';
-import { planetsData } from '../assets/planets.js';
-import './App.css';
-import PlanetData from '../components/PlanetData/PlanetData.jsx';
-import PlanetList from '../components/PlanetList/PlanetList.jsx';
+import { useState } from "react";
+import { planetsData } from "../assets/planets.js";
+import "./App.css";
+import PlanetData from "../components/PlanetData/PlanetData.jsx";
+import PlanetList from "../components/PlanetList/PlanetList.jsx";
 
 function App() {
   const [selectedPlanet, setSelectedPlanet] = useState({});
 
   // Handler Function
   function handleClick(planetName) {
-    const prova = planetsData.filter((planet) => planet.name === planetName);
-    setSelectedPlanet(prova);
+    const findPlanet = planetsData.find((planet) => planet.name === planetName);
+    if (findPlanet) {
+      setSelectedPlanet(findPlanet);
+    }
   }
 
   return (
@@ -33,7 +35,6 @@ function App() {
 
 export default App;
 
-// Componente + Props + funzione anonima + callback Handler(parametro)
+// Componente + Props che gestisce la funzione Handler + funzione Handler(parametro)
 
-//
 

@@ -1,34 +1,30 @@
-import { planetsData } from '../../assets/planets';
-import './PlanetData.css';
+import "./PlanetData.css";
 
 function PlanetData({ selectedPlanet }) {
-  console.log(selectedPlanet);
-
+  const {
+    name,
+    image,
+    title,
+    description,
+    distanceFromSun,
+    diameter,
+    gravity,
+  } = selectedPlanet;
   return (
-    <div className='planet_data'>
-      <div className='title'>PLANET DATA</div>
-      {selectedPlanet.length > 0 ? (
-        <>
-          <div>
-            {planet.name} <br />
-            <br />
-            {planet.image} <br />
-            <br />
-            {planet.title} <br />
-            <br />
-            {planet.description} <br />
-            <br />
-            {planet.distanceFromSun} <br />
-            <br />
-            {planet.diameter} <br />
-            <br />
-            {planet.gravity} <br />
-            <br />
-          </div>
-
-        </>
+    <div className="planet_data">
+      <div className="title">PLANET DATA</div>
+      {name ? (
+        <div>
+          <p>{name}</p> 
+          {image}
+          <p>{title}</p> 
+          <p>{description}</p> 
+          <p>{distanceFromSun}</p>
+          <p>{diameter}</p>
+          <p>{gravity}</p>
+        </div>
       ) : (
-        'Please select a planet'
+        "Please select a planet"
       )}
     </div>
   );
@@ -36,11 +32,4 @@ function PlanetData({ selectedPlanet }) {
 
 export default PlanetData;
 
-/*
 
-.map((planet, id) => (
-      <div key={id}>
-       
-      </div>
-
-  */

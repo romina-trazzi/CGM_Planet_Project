@@ -8,7 +8,7 @@ function PlanetList({ onSelect }) {
         <div className='title'>PLANET LIST</div>
         <ul>
           {planetsData.map((planet, id) => (
-            <li key={id} onClick={() => onSelect(planetsData[id].name)}>
+            <li key={id + planet.name} onClick={() => onSelect(planet.name)}>
               {planet.name}
             </li>
           ))}
@@ -20,4 +20,3 @@ function PlanetList({ onSelect }) {
 
 export default PlanetList;
 
-// Props + azione={props}
