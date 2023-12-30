@@ -29,8 +29,12 @@ function App() {
       </header>
 
       <main>
-        <PlanetList onSelect={handleClick} />
-        <PlanetButton onReset={handleReset} />
+        <div className='planet_list'>
+          <menu>
+            <PlanetList onSelect={handleClick} />
+            <PlanetButton onReset={handleReset} />
+          </menu>
+        </div>
         <PlanetData selectedPlanet={selectedPlanet} />
       </main>
 

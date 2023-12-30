@@ -21,6 +21,10 @@ main {
   align-content: space-around;
   grid-template-columns: 10% auto auto 10%;
   grid-template-areas: '. planetlist planetdata .';
-  grid-gap: 50px;
+}
+
+main menu {
+  display: flex;
+  flex-direction: column;
 }
 
