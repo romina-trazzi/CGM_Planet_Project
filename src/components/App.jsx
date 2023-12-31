@@ -41,7 +41,7 @@ function App() {
       </main>
 
       <footer>
-        <span> Made with love by ~ Romina Trazzi 2023 ~ </span>
+        <span> Made by ~ Romina Trazzi 2023 ~ </span>
       </footer>
     </>
   );
