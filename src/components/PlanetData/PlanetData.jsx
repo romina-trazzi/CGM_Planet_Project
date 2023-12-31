@@ -8,10 +8,10 @@ function PlanetData({ selectedPlanet }) {
     description,
     distanceFromSun,
     diameter,
-    gravity,
+    gravity
   } = selectedPlanet;
   return (
-    <div className='planet_data'>
+    <>
       <div className='title'>~ PLANET DATA ~</div>
       {name ? (
         <div class='planet_info'>
@@ -26,7 +26,7 @@ function PlanetData({ selectedPlanet }) {
       ) : (
         <p class='noplanet'>...PLEASE SELECT A PLANET...</p>
       )}
-    </div>
+    </>
   );
 }
 

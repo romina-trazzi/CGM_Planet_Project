@@ -1,0 +1,41 @@
+button {
+  grid-area: planetbutton;
+  width: max-content;
+  height: min-content;
+  padding: 10px;
+  margin-top: 25px;
+}
+
+.planet_button {
+  box-shadow: 0px 0px 0px 0px rgb(159, 180, 242);
+  background: linear-gradient(
+    to bottom,
+    rgb(120, 146, 194) 5%,
+    rgb(71, 110, 158) 50%,
+    rgb(59, 72, 141) 100%
+  );
+  background-color: rgb(120, 146, 194);
+  border-radius: 28px;
+  border: 1px solid rgb(78, 96, 150);
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-family: 'Play', sans-serif;
+  font-size: 16px;
+  padding: 15px 30px;
+  text-decoration: none;
+  text-shadow: 0px 1px 11px rgb(40, 57, 102);
+}
+.planet_button:hover {
+  background: linear-gradient(
+    to bottom,
+    rgb(59, 72, 141) 5%,
+    rgb(71, 110, 158) 50%,
+    rgb(120, 146, 194) 100%
+  );
+  background-color: rgb(71, 110, 158);
+}
+.planet_button:active {
+  position: relative;
+  top: 1px;
+}

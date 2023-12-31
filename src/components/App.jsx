@@ -35,7 +35,9 @@ function App() {
             <PlanetButton onReset={handleReset} />
           </menu>
         </div>
-        <PlanetData selectedPlanet={selectedPlanet} />
+        <div className='planet_data'>
+          <PlanetData selectedPlanet={selectedPlanet} />
+        </div>
       </main>
 
       <footer>
