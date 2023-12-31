@@ -38,7 +38,6 @@
 .planet_info p {
   padding: 0.5rem 0.3rem 0.5rem 0.3rem;
   list-style: none;
-  text-shadow: 2px 2px 5px darkslateblue;
 }
 
 .planet_data p.noplanet {

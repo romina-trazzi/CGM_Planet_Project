@@ -32,10 +32,10 @@
 }
 
 .planet_list menu ul li:hover {
-  color: blueviolet;
-  text-shadow: 0 0 0 darkslateblue;
+  color: darkslateblue;
+  text-shadow: 0 0 0 rgb(59, 72, 141);
   font-size: 1.4rem;
-  background-color: blanchedalmond;
+  background-color: white;
   cursor: pointer;
 }
 
