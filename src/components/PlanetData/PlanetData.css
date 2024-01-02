@@ -3,9 +3,7 @@
 
 .planet_data {
   grid-area: planetdata;
-  height: 600px;
   max-height: max-content;
-  width: 400px;
   padding: 1rem 0 1rem 0px;
   background-color: rgb(59, 72, 141);
   border-radius: 30px;

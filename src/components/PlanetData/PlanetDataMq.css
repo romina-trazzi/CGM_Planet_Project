@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+@media (min-width: 400px) {
+  .planet_data {
+    grid-area: planetdata;
+    max-height: max-content;
+    padding: 1rem 0 1rem 0px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .planet_data .title {
+    text-align: center;
+    font-family: 'Train One', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 1rem 2rem;
+  }
+
+  .planet_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .planet_info p,
+  .planet_data p.noplanet {
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  .planet_info p {
+    padding: 0.5rem 0.3rem 0.5rem 0.3rem;
+    list-style: none;
+  }
+
+  .planet_data p.noplanet {
+    margin-top: 2rem;
+  }
+
+  .planet_info img {
+    height: 150px;
+    max-height: 200px;
+    max-width: 200px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}

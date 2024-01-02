@@ -1,9 +1,8 @@
 import { planetsData } from '../../assets/planets';
 import './PlanetList.css';
-import PlanetButton from '../PlanetButton/PlanetButton.jsx';
+import './PlanetListMq.css';
 
 function PlanetList({ onSelect }) {
- 
   return (
     <>
       <div className='title'>~ PLANET LIST ~ </div>
@@ -15,10 +14,8 @@ function PlanetList({ onSelect }) {
         ))}
       </ul>
     </>
-      
   );
 }
 
 export default PlanetList;
-
 

@@ -1,4 +1,5 @@
 import './PlanetData.css';
+import './PlanetDataMq.css';
 
 function PlanetData({ selectedPlanet }) {
   const {
@@ -8,7 +9,7 @@ function PlanetData({ selectedPlanet }) {
     description,
     distanceFromSun,
     diameter,
-    gravity
+    gravity,
   } = selectedPlanet;
   return (
     <>

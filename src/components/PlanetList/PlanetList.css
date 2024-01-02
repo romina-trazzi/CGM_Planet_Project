@@ -3,9 +3,7 @@
 
 .planet_list {
   grid-area: planetlist;
-  height: 600px;
   max-height: max-content;
-  width: 300px;
   padding: 1rem 0 1rem 0px;
   background-color: rgb(171, 172, 177);
   border-radius: 30px;
