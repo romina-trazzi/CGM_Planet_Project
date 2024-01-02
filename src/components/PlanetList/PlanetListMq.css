@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
-@media (min-width: 400px) {
+@media (min-width: 400px) and (max-width: 1200px) {
   .planet_list {
     grid-area: planetlist;
     max-height: max-content;
@@ -26,12 +26,11 @@
     font-size: 1.3rem;
     font-weight: 700;
   }
+}
 
-  .planet_list menu ul li:hover {
-    color: darkslateblue;
-    text-shadow: 0 0 0 rgb(59, 72, 141);
-    font-size: 1.4rem;
-    background-color: white;
-    cursor: pointer;
+@media (min-width: 1201px) {
+  .planet_list {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 }

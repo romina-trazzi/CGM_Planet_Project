@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
-@media (min-width: 400px) {
+@media (min-width: 400px) and (max-width: 1200px) {
   .planet_data {
     grid-area: planetdata;
     max-height: max-content;
@@ -47,5 +47,12 @@
     max-width: 200px;
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 1201px) {
+  .planet_data {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 }
