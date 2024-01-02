@@ -11,6 +11,11 @@
   box-shadow: 0px 0px 25px 75px rgba(0, 0, 0, 0.6);
 }
 
+.planet_list .active {
+  background-color: darkslateblue;
+  border-radius: 20px;
+}
+
 .planet_list .title {
   text-align: center;
   font-family: 'Train One', sans-serif;

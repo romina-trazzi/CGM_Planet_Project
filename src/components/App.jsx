@@ -32,7 +32,10 @@ function App() {
       <main>
         <div className='planet_list'>
           <menu>
-            <PlanetList onSelect={handleClick} />
+            <PlanetList
+              onSelect={handleClick}
+              isSelected={selectedPlanet.name}
+            />
             <PlanetButton onReset={handleReset} />
           </menu>
         </div>
