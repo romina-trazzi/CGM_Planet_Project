@@ -3,28 +3,7 @@
 
 @media (min-width: 400px) and (max-width: 1200px) {
   .planet_list {
-    grid-area: planetlist;
-    max-height: max-content;
-    padding: 1rem 0 1rem 0px;
     margin-top: 5rem;
-  }
-
-  .planet_list .title {
-    text-align: center;
-    font-family: 'Train One', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 900;
-    padding: 1rem 2rem;
-  }
-
-  .planet_list menu ul li {
-    padding: 0.5rem 0 0.5rem 0;
-    list-style: none;
-    text-align: center;
-    text-shadow: 2px 2px 5px darkslateblue;
-    font-family: 'Play', sans-serif;
-    font-size: 1.3rem;
-    font-weight: 700;
   }
 }
 
